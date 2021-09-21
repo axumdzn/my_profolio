@@ -18,6 +18,7 @@ header {
     background: var(--dark);
     color: var(--dark);
     padding: .5% .5% .5% 0;
+    z-index: 1;
 }
 
 h1 {
@@ -47,31 +48,101 @@ nav a {
     border-bottom: 3px solid var(--light);
   }
 
-  figure {
+figure {
     height: 600px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/ocean.jpg");
     background-size: cover;
     background-position: center;
-  }
+}
 
-/* section {
+section {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    vertical-align: top;
     align-items: center;
-    color: var(--dark);
+    color: var(--light);
 }
 h2 {
     font-size: 200%;
-    padding:5%;
-    border-right: 7px solid var(--dark);
-    border-right-width: 90%;
-    justify-content: left;
+    margin:3%;
+    padding:0 .5% 2% 2%;
+    border-right: 5px solid var(--light);
+    width: 10%;
+    text-align: right;
+}
+p{
+    padding-left: 2%;
+}
+
+.imageBox {
+    width:83%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.contactInfo{
+.imageBig {
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.imageBox img {
+    vertical-align: top;
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid var(--light);
+    margin: 5px;
+}
+
+.imageBig h3 {
+    background-color: var(--light);
+    color: var(--dark);
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    font-style: bold;
+    font-size: 24px;
+    padding: 10px;
+    display: block;
+}
+
+.imageSmall {
+    justify-content: center;
+    position:relative;
+}
+
+.imageSmall div {
+    position: relative;
+    display: inline-block;
+}
+
+.imageSmall h3{
+    background-color: var(--light);
+    color: var(--dark);
+    position: absolute;
+    left:7px;
+    bottom: 20px;
+    font-style: bold;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.contactInfo {
+    text-decoration: none;
+    width: 83%;
     display: flex;
-    justify-content: space-between;
-} */
+    justify-content: space-evenly;
+    font-size: 24px;
+    font-style: bold;
+}
+
+.contactInfo a{
+    text-decoration: none;
+    color: var(--light);
+}
